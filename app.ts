@@ -1,7 +1,17 @@
+/**Type Alias */
 
-
-function Add(num1:number,num2:number){
-    return num1+num2
+type User = {
+    name:string,
+    age:number
 }
 
-console.log(Add(1,3))
+const user1:User ={
+    name:"Avishek",
+    age:22
+}
+
+function loginUser(userData:User){
+    return userData
+}
+
+console.log(loginUser(user1))

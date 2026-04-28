@@ -1,5 +1,10 @@
 "use strict";
-function Add(num1, num2) {
-    return num1 + num2;
+/**Type Alias */
+const user1 = {
+    name: "Avishek",
+    age: 22
+};
+function loginUser(userData) {
+    return userData;
 }
-console.log(Add(1, 3));
+console.log(loginUser(user1));
