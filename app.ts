@@ -1,17 +1,45 @@
-/**Type Alias */
-
-type User = {
-    name:string,
-    age:number
+interface Transaction{
+    payerAccountNumber:number;
+    payeeAccountNumber:number;
 }
 
-const user1:User ={
-    name:"Avishek",
-    age:22
+interface BankAccount{
+    accountNumber:number;
+    accountHolder:string;
+    balance:number;
+    isActive:boolean;
+    transactions:Transaction[]
 }
 
-function loginUser(userData:User){
-    return userData
+const transactions1:Transaction = {
+    payerAccountNumber:123,
+    payeeAccountNumber:455,
 }
 
-console.log(loginUser(user1))
+const transactions2:Transaction ={
+    payerAccountNumber:654,
+    payeeAccountNumber:455,
+}
+
+const bankAccount:BankAccount={
+    accountNumber:455,
+    accountHolder:"Avi",
+    balance:2000,
+    isActive:true,
+    transactions:[transactions1,transactions2]
+}
+
+console.log(bankAccount)
+
+/**
+ * {
+  accountNumber: 455,
+  accountHolder: 'Avi',
+  balance: 2000,
+  isActive: true,
+  transactions: [
+    { payerAccountNumber: 123, payeeAccountNumber: 455 },
+    { payerAccountNumber: 654, payeeAccountNumber: 455 }
+  ]
+}
+ */

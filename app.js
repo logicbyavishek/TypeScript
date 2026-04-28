@@ -1,10 +1,17 @@
 "use strict";
-/**Type Alias */
-const user1 = {
-    name: "Avishek",
-    age: 22
+const transactions1 = {
+    payerAccountNumber: 123,
+    payeeAccountNumber: 455,
 };
-function loginUser(userData) {
-    return userData;
-}
-console.log(loginUser(user1));
+const transactions2 = {
+    payerAccountNumber: 654,
+    payeeAccountNumber: 455,
+};
+const bankAccount = {
+    accountNumber: 455,
+    accountHolder: "Avi",
+    balance: 2000,
+    isActive: true,
+    transactions: [transactions1, transactions2]
+};
+console.log(bankAccount);
