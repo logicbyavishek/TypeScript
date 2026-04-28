@@ -1,15 +1,11 @@
-interface Book{
-    name:string;
-    price:number;
-}
-interface Book{
-    size:number
+type ID = number|string
+
+function printID(id:ID):void{
+    if(typeof id ==="string"){
+        console.log(id.toUpperCase())
+    }else{
+        console.log(id)
+    }
 }
 
-const book:Book ={
-    name:"Thank you for leaving",
-    price:40,
-    size:55
-}
-
-console.log(book)
+printID("Avi12")

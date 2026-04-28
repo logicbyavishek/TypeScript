@@ -1,7 +1,10 @@
 "use strict";
-const book = {
-    name: "Thank you for leaving",
-    price: 40,
-    size: 55
-};
-console.log(book);
+function printID(id) {
+    if (typeof id === "string") {
+        console.log(id.toUpperCase());
+    }
+    else {
+        console.log(id);
+    }
+}
+printID("Avi12");
