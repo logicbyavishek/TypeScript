@@ -1,9 +1,7 @@
 "use strict";
-const audioBook = {
+const book = {
     name: "Thank you for leaving",
-    price: 400,
-    filesize: 45,
-    format: "MP4",
-    duration: "3 Hour"
+    price: 40,
+    size: 55
 };
-console.log(audioBook);
+console.log(book);
